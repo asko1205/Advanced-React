@@ -16,7 +16,7 @@ export default function useForm(initial = {}) {
     }
     if (type === 'file') {
       // funky way file upload works
-      value[0] = e.target.files;
+      [value] = e.target.files;
     }
     setInputs({
       // copy the existing state
